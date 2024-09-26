@@ -4,7 +4,8 @@ format: html
 embed-resources: true
 ---
 
-```{r setup, warning = FALSE}
+```{r setup, warning = FALSE, message = FALSE}
+
 
 library(tidyverse)
 
