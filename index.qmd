@@ -1,0 +1,22 @@
+---
+title: "test"
+format: html
+embed-resources: true
+---
+
+```{r setup, warning = FALSE}
+
+library(tidyverse)
+
+
+storms |> 
+  ggplot(aes( x = year , y = wind)) + 
+  geom_col() +
+  theme_minimal()+
+  labs( 
+    title = "Wind Pressure: 1980 - Present",
+    subtitle = "Wind Pressure has increased over time",
+    caption = "Source: NOAA"
+    )
+  
+```
